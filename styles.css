@@ -1,0 +1,101 @@
+/* Configuracion general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+:root {
+  --contenedor: #9dcee9;
+  --principal: #4587aa;
+  --secundario: #ddf2fc;
+  --body: #cecece;
+  --light: #fff;
+  --dark: #000;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundario);
+}
+
+.contenedor-general {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: var(--contenedor);
+}
+
+.div-search, .formulario, #div-users {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-search {
+  padding: 20px 0;
+}
+
+.logo-usuario {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.contenedor-nombre{
+  width: 78%;
+}
+
+.usuario{
+  width: 100%;
+  font-size: 18px;
+}
+
+.nombre-usuario{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+
+.roundBorder {
+  border-radius: 5px;
+}
+
+.formulario button {
+  width: 80px;
+  height: 35px;
+  background-color: var(--principal);
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.formulario input {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.formulario input:focus {
+  outline: none;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.mensaje-error{
+  font-size: 18px;
+  padding: 20px 0 0;
+}
