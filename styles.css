@@ -24,7 +24,7 @@ body {
 }
 
 .contenedor-general {
-  width: 80%;
+  width: 450px ;
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
