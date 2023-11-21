@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de usuarios</title>
+
+  <!-- Link a la fuente de roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Link a la hoja de estilo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Link al script -->
+  <script src="script.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+  <div class="contenedor-general roundBorder">
+
+    <div class="div-search">
+
+      <form class="formulario" onsubmit="agregarUsuario(event)">
+
+        <input type="text" name="searchBar" autocomplete="off" placeholder="Buscar usuario..." class="roundBorder">
+
+        <button type="submit" class="searchButton">Buscar</button>
+
+        <button type="button" onclick="borrarDatos()">Borrar</button>
+
+      </form>
+
+    </div>
+
+    <div id="div-users"></div>
+
+  </div>
+
+</body>
+
+</html>
